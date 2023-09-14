@@ -7,7 +7,7 @@
 
     public static void main(String[] args) {
         
-        int num = 0, maiorNum = 0, igual = 1;
+        int num = 0, maiorNum = 0, repete = 1, numRepete = 0;
     
         Scanner leia = new Scanner(System.in);
 
@@ -23,7 +23,8 @@
             if (num > maiorNum) {
                 maiorNum = num;
             }else if (num == maiorNum) {
-                igual++;
+                repete++;
+                numRepete = num;
             }
             
         }
@@ -31,9 +32,9 @@
 
         System.out.println("---------------------------------------");
         
-        if (igual == 2 && num < maiorNum) {
+        if (repete == 2 && numRepete == maiorNum) {
             System.out.println("O maior valor é " + maiorNum + " e se repete 2 vezes");   
-        }else if (igual == 3){
+        }else if (repete >= 3){
             System.out.println("Os 3 valores são iguais!");
         }else{
             System.out.println("O maior valor é: " + maiorNum);
