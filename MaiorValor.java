@@ -42,6 +42,6 @@
         
 
         System.out.println("");
-
+        leia.close();
     }
 }

@@ -28,5 +28,6 @@ public class MaiorNumero {
         } else {
             System.out.println("Maior número digitado: " + maiorNum);
         }    
+        leia.close();
     }
 }
